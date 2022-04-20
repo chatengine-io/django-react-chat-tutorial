@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { Context } from "../../context";
 
 import Header from "./Header";
+import ChatList from "./ChatList";
 
 import {
   MultiChatWindow,
@@ -36,7 +37,16 @@ const ChatsPage = () => {
           <div className="bubble-4" />
 
           <MultiChatSocket {...chatProps} />
-          <MultiChatWindow {...chatProps} className="multi-chat-window" />
+          <MultiChatWindow
+            {...chatProps}
+            renderChatList={(props) => (
+              <ChatList
+                {...props}
+                onChatCardClick={chatProps.onChatCardClick}
+              />
+            )}
+            className="multi-chat-window"
+          />
         </div>
       </div>
     );
