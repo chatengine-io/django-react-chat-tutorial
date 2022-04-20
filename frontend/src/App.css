@@ -1,0 +1,18 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/antd/4.19.5/antd.min.css");
+
+* {
+  font-family: Avenir;
+}
+
+.ce-avatar-status {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.ce-message-form {
+  width: 105% !important;
+}
+
+#msg-textarea {
+  top: 4px !important;
+}
