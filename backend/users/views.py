@@ -1,9 +1,14 @@
-from rest_framework import permissions, status
+from django.contrib.auth.models import User
 
+from rest_framework import permissions, status, generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from .serializers import UserSerializer
+from .serializers import UserSerializer, UserPublicSerializer
+
+class UserList(generics.ListAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserPublicSerializer
 
 class MyAccount(APIView):
     permissions=[permissions.IsAuthenticated, permissions.AllowAny]
