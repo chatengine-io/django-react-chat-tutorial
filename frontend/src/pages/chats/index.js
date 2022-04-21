@@ -45,7 +45,6 @@ const ChatsPage = () => {
                 onChatCardClick={chatProps.onChatCardClick}
               />
             )}
-            className="multi-chat-window"
           />
         </div>
       </div>
