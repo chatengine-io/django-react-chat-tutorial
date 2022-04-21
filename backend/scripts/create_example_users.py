@@ -39,7 +39,7 @@ example_users = [
 ]
 
 for example_user in example_users:
-    user = User.objects.create(
+    user = User.objects.create_user(
         username=example_user['username'],
         email=example_user['email'],
         first_name=example_user['first_name'],
