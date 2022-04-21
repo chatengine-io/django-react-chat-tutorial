@@ -6,9 +6,9 @@ COPY requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 COPY . /app/
-# --- start: For this app ---
+# --- start: For this tutorial ---
 RUN python manage.py migrate
-RUN echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@example.com', 'pass1234')" | python manage.py shell
+RUN cat scripts/create_example_users.py | python manage.py shell
 # --- end ---
 CMD gunicorn -b :8080 server.wsgi:application
 EXPOSE ${PORT}
