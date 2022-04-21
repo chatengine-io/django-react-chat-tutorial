@@ -208,14 +208,14 @@
   background-color: #4e426d !important;
 }
 
-.multi-chat-window {
-  position: absolute;
-  top: calc(10vh + 64px);
-  left: 10vw;
-  height: calc(80vh - 64px);
-  width: 80vw;
-  border: 1px solid black;
+.ce-chat-engine {
+  position: absolute !important;
+  top: calc(10vh + 64px) !important;
+  left: 10vw !important;
+  height: calc(80vh - 64px) !important;
+  width: 80vw !important;
+  border: 1px solid black !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset !important;
 }
