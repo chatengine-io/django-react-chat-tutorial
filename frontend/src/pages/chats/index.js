@@ -36,7 +36,7 @@ const ChatsPage = () => {
           <div className="bubble-4" />
 
           <MultiChatSocket {...chatProps} />
-          <MultiChatWindow {...chatProps} className="multi-chat-window" />
+          <MultiChatWindow {...chatProps} />
         </div>
       </div>
     );
