@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import { Col, Row, Form, Input, Button, Checkbox, notification } from "antd";
 
 import { login } from "./login";
-import { Context } from "../../../context";
+import { Context } from "../../context";
 
 const Login = () => {
   const [error, setError] = useState("");

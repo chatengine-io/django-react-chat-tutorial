@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import { Col, Row, Button, Form, Input, notification } from "antd";
 
 import { updateUser } from "./updateUser";
-import { Context } from "../../../../../context";
+import { Context } from "../../../../context";
 
 const EditAccount = (props) => {
   const [error, setError] = useState("");
