@@ -2,8 +2,8 @@ import { useContext } from "react";
 
 import "./App.css";
 
-import AuthPage from "./pages/auth";
-import ChatsPage from "./pages/chats";
+import AuthPage from "./authPage";
+import ChatsPage from "./chatsPage";
 
 import { Context } from "./context";
 
