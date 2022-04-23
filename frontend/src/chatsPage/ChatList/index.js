@@ -3,7 +3,7 @@ import { useContext, useState, useEffect, useRef } from "react";
 import { fetchUserList } from "./fetchUserList";
 import { getOrCreateChat } from "./getOrCreateChat";
 
-import { Context } from "../../../context";
+import { Context } from "../../context";
 import { Input, ChatCard } from "react-chat-engine-advanced";
 
 const ChatList = (props) => {

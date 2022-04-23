@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { Context } from "../../context";
+import { Context } from "../context";
 
 import Header from "./Header";
 import ChatList from "./ChatList";
