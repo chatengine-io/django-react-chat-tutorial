@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Button } from "antd";
 
 import { deleteUser } from "./deleteUser";
-import { Context } from "../../../../../context";
+import { Context } from "../../../../context";
 
 const DeleteAccount = () => {
   const { user, setUser } = useContext(Context);

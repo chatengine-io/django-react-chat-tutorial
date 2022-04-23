@@ -26,7 +26,7 @@ example_users = [
         "username": "dwayne-the-rock",
         "email": "dwayne@rock.com",
         "first_name": "Dwayne",
-        "last_name": "Jhonson",
+        "last_name": "Johnson",
         "secret": "pass1234"
     },
     {
